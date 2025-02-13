@@ -43,12 +43,12 @@ export default function Navbar() {
 
 // Navigation Links Array
 const navLinks = [
-    { href: "#Home", src: "/Images/home.png", alt: "Home" },
-    { href: "#About", src: "/Images/user.png", alt: "About" },
-    { href: "#Projects", src: "/Images/project.png", alt: "About" },
-    { href: "#Skills", src: "/Images/skills.png", alt: "Skills" },
-    { href: "#projects", src: "/Images/education.png", alt: "Projects" },
-    { href: "#contact", src: "/Images/mail.png", alt: "Contact" },
+    { href: "#Home", src: "/images/home.png", alt: "Home" },
+    { href: "#About", src: "/images/user.png", alt: "About" },
+    { href: "#Projects", src: "/images/project.png", alt: "About" },
+    { href: "#Skills", src: "/images/skills.png", alt: "Skills" },
+    { href: "#projects", src: "/images/education.png", alt: "Projects" },
+    { href: "#contact", src: "/images/mail.png", alt: "Contact" },
 ];
 
 // Custom Smooth Scroll Link Component
