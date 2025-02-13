@@ -56,7 +56,7 @@ export default function Hero() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1.2, type: "spring", stiffness: 80 }}
                     >
-                        <Button text="RESUME" link="/" />
+                        <Button text="RESUME"  />
                     </motion.div>
 
                     <motion.div
@@ -64,7 +64,7 @@ export default function Hero() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1.4, type: "spring", stiffness: 80 }}
                     >
-                        <Button text="CONTACT" link="/" />
+                        <Button text="CONTACT"  />
                     </motion.div>
                 </motion.div>
             </motion.div>

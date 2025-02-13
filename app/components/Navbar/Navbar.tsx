@@ -7,12 +7,12 @@ import { useEffect } from "react";
 
 export default function Navbar() {
     useEffect(() => {
-        document.documentElement.style.scrollBehavior = "smooth"; // Enables smooth scrolling globally
+        document.documentElement.style.scrollBehavior = "smooth"; 
     }, []);
 
     return (
         <>
-            {/* Desktop Sidebar Navbar */}
+           
             <nav className="hidden lg:flex fixed top-0 left-0 h-full w-20 bg-black text-white p-6 flex-col">
                 <ul className="space-y-12 text-xl flex flex-col justify-center mt-10">
                     {navLinks.map(({ href, src, alt }, index) => (
@@ -25,8 +25,8 @@ export default function Navbar() {
                 </ul>
             </nav>
 
-            {/* Mobile Bottom Navbar */}
-            <nav className="lg:hidden fixed bottom-2 left-6 w-[90%] bg-black text-white p-4 rounded-2xl">
+            
+            <nav className="lg:hidden fixed bottom-2 left-6 w-[90%] bg-black text-white p-4 rounded-2xl z-50">
                 <ul className="flex justify-around text-lg">
                     {navLinks.map(({ href, src, alt }, index) => (
                         <motion.li key={index} whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 100 }}>
@@ -45,7 +45,8 @@ export default function Navbar() {
 const navLinks = [
     { href: "#Home", src: "/Images/home.png", alt: "Home" },
     { href: "#About", src: "/Images/user.png", alt: "About" },
-    { href: "#skills", src: "/Images/skills.png", alt: "Skills" },
+    { href: "#Projects", src: "/Images/project.png", alt: "About" },
+    { href: "#Skills", src: "/Images/skills.png", alt: "Skills" },
     { href: "#projects", src: "/Images/education.png", alt: "Projects" },
     { href: "#contact", src: "/Images/mail.png", alt: "Contact" },
 ];
