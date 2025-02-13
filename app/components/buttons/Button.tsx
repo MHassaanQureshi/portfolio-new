@@ -1,9 +1,9 @@
 interface Props {
     text: string;
-    link: string;
+    // link: string;
 }
 
-export default function Button({ text, link }: Props) {
+export default function Button({ text }: Props) {
     return (
        
             <button className="bg-white w-[158px] h-[68px] border-2 border-black text-2xl 
