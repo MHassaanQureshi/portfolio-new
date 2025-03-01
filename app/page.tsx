@@ -37,7 +37,7 @@ export default function Home(){
       <Skill link="/images/java-script.png" />
       <Skill link="/images/typescript.png" />
       <Skill link="/images/sanity.png" />
-      <Skill link="/images/tailwind.png" />
+      <Skill link="/images/Tailwind.png" />
       <Skill link="/images/bootstrap.png" />
       
       </div>
