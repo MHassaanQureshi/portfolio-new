@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Profile from "../profile/Profile";
 import Button from "../buttons/Button";
+import SimBut from "../SimBut/SimBut";
 
 export default function Hero() {
     return (
@@ -56,7 +57,7 @@ export default function Hero() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1.2, type: "spring", stiffness: 80 }}
                     >
-                        <Button text="RESUME"  />
+                        <Button text="RESUME" link="/Resume.pdf"  />
                     </motion.div>
 
                     <motion.div
@@ -64,7 +65,7 @@ export default function Hero() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1.4, type: "spring", stiffness: 80 }}
                     >
-                        <Button text="CONTACT"  />
+                        <SimBut text="CONTACT" />
                     </motion.div>
                 </motion.div>
             </motion.div>

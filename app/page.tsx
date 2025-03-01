@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Hero from "./components/Hero-section/Hero";
 import Project from "./components/Project/Project";
+import Skill from "./components/Skill/Skill";
 
 export default function Home(){
   return(
@@ -15,15 +16,43 @@ export default function Home(){
       <h1 className="text-3xl font-extrabold p-2">PROJECTS</h1>
     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       
-      <Project image="/images/comforty.png" link="https://sanity-comforty.vercel.app/"/>
-      <Project image="/images/exclusive.png" link="https://exclusive-shop-2-0.vercel.app/"/>
-      <Project image="/images/blog.png" link="https://blog-web-20.vercel.app/"/>
-      <Project image="/images/fashion.png" link="https://fashion-shop-sepia.vercel.app/"/>
-      <Project image="/images/amazon.png" link="https://amazon-clone-j3fv.vercel.app/"/>
-      <Project image="/images/resume.png" link="https://hackathon-milestone-500.vercel.app/"/>
-      <Project image="/images/weather.png" link="https://weather-app-typescript-theta.vercel.app/"/>
-      <Project image="/images/dice.png" link="https://dice-game-react-two.vercel.app/"/>
+      <Project image="/Images/comforty.png" link="https://sanity-comforty.vercel.app/"/>
+      <Project image="/Images/exclusive.png" link="https://exclusive-shop-2-0.vercel.app/"/>
+      <Project image="/Images/blog.png" link="https://blog-web-20.vercel.app/"/>
+      <Project image="/Images/fashion.png" link="https://fashion-shop-sepia.vercel.app/"/>
+      <Project image="/Images/amazon.png" link="https://amazon-clone-j3fv.vercel.app/"/>
+      <Project image="/Images/resume.png" link="https://hackathon-milestone-500.vercel.app/"/>
+      <Project image="/Images/weather.png" link="https://weather-app-typescript-theta.vercel.app/"/>
+      <Project image="/Images/dice.png" link="https://dice-game-react-two.vercel.app/"/>
       
+    </div>
+    <div className="flex items-center flex-col w-full mt-20" id="Skills">
+      <h1 className="text-3xl font-extrabold p-2">SKILLS</h1>
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-5 md:gap-12 md:mt-10">
+      <Skill link="/images/nextjs-icon.png" />
+      <Skill link="/images/react.png" />
+      <Skill link="/images/python.png" />
+      <Skill link="/images/html.png" />
+      <Skill link="/images/css-1.png" />
+      <Skill link="/images/java-script.png" />
+      <Skill link="/images/typescript.png" />
+      <Skill link="/images/sanity.png" />
+      <Skill link="/images/tailwind.png" />
+      <Skill link="/images/bootstrap.png" />
+      
+      </div>
+    <div className="flex items-center flex-col w-full mt-20" id="Skills">
+      <h1 className="text-3xl font-extrabold p-2">TOOLS I USE</h1>
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-12 md:mt-10">
+      <Skill link="/images/window.webp" />
+      <Skill link="/images/github-2.png" />
+      <Skill link="/images/streamlit.svg" />
+      <Skill link="/images/vs.png" />
+      <Skill link="/images/colab.svg" />
+      <Skill link="/images/vercel.png" />
+      
+      </div>
+      </div>
     </div>
     </div>
     </div>
