@@ -2,7 +2,7 @@ import About from "./components/About/About";
 import Hero from "./components/Hero-section/Hero";
 import Project from "./components/Project/Project";
 import Skill from "./components/Skill/Skill";
-
+import Education from "./components/Education/Education";
 export default function Home(){
   return(
     <div className="max-h-full max-w-full flex flex-col items-center justify-center ">
@@ -16,14 +16,14 @@ export default function Home(){
       <h1 className="text-3xl font-extrabold p-2">PROJECTS</h1>
     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       
-      <Project image="/images/comforty.png" link="https://sanity-comforty.vercel.app/"/>
-      <Project image="/images/exclusive.png" link="https://exclusive-shop-2-0.vercel.app/"/>
-      <Project image="/images/blog.png" link="https://blog-web-20.vercel.app/"/>
-      <Project image="/images/fashion.png" link="https://fashion-shop-sepia.vercel.app/"/>
-      <Project image="/images/amazon.png" link="https://amazon-clone-j3fv.vercel.app/"/>
-      <Project image="/images/resume.png" link="https://hackathon-milestone-500.vercel.app/"/>
-      <Project image="/images/weather.png" link="https://weather-app-typescript-theta.vercel.app/"/>
-      <Project image="/images/dice.png" link="https://dice-game-react-two.vercel.app/"/>
+      <Project image="/Images/comforty.png" link="https://sanity-comforty.vercel.app/"/>
+      <Project image="/Images/exclusive.png" link="https://exclusive-shop-2-0.vercel.app/"/>
+      <Project image="/Images/blog.png" link="https://blog-web-20.vercel.app/"/>
+      <Project image="/Images/fashion.png" link="https://fashion-shop-sepia.vercel.app/"/>
+      <Project image="/Images/amazon.png" link="https://amazon-clone-j3fv.vercel.app/"/>
+      <Project image="/Images/resume.png" link="https://hackathon-milestone-500.vercel.app/"/>
+      <Project image="/Images/weather.png" link="https://weather-app-typescript-theta.vercel.app/"/>
+      <Project image="/Images/dice.png" link="https://dice-game-react-two.vercel.app/"/>
       
     </div>
     <div className="flex items-center flex-col w-full mt-20" id="Skills">
@@ -37,7 +37,7 @@ export default function Home(){
       <Skill link="/images/java-script.png" />
       <Skill link="/images/typescript.png" />
       <Skill link="/images/sanity.png" />
-      <Skill link="/images/Tailwind.png" />
+      <Skill link="/images/tailwind.png" />
       <Skill link="/images/bootstrap.png" />
       
       </div>
@@ -50,6 +50,14 @@ export default function Home(){
       <Skill link="/images/vs.png" />
       <Skill link="/images/colab.svg" />
       <Skill link="/images/vercel.png" />
+      
+      </div>
+      </div>
+
+      <div className="flex items-center flex-col w-full mt-20" id="Education">
+      <h1 className="text-3xl font-extrabold p-2">EDUCATION</h1>
+    <div className="grid grid-cols-2 md:grid-cols-3 md:gap-12 md:mt-10 md:ml-[35%]">
+      <Education />
       
       </div>
       </div>
