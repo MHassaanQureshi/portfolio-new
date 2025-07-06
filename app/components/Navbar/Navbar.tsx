@@ -47,7 +47,7 @@ const navLinks = [
     { href: "#About", src: "/Images/user.png", alt: "About" },
     { href: "#Projects", src: "/Images/project.png", alt: "About" },
     { href: "#Skills", src: "/Images/skills.png", alt: "Skills" },
-    { href: "#projects", src: "/Images/education.png", alt: "Projects" },
+    { href: "#Education", src: "/Images/education.png", alt: "Education" },
     { href: "#contact", src: "/Images/mail.png", alt: "Contact" },
 ];
 
