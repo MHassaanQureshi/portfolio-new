@@ -104,10 +104,6 @@ For more on deploying Next.js apps, refer to the \[Next.js deployment documentat
 
 ---
 
-## Summary
 
-This repository serves as a clean, scalable starting point for a developer’s portfolio. With TypeScript, Tailwind, optimized font loading, and deployment-ready configuration, it stands as an effective foundation for showcasing your professional work.
-
-Let me know if you’d like to expand this README to include sections like project features, architecture overview, content structure, or responsiveness notes—I’d be happy to help!
 
 [1]: https://github.com/MHassaanQureshi/portfolio-new "GitHub - MHassaanQureshi/portfolio-new"
