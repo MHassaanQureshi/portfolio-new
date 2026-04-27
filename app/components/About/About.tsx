@@ -13,19 +13,21 @@ export default function About() {
     >
       <span className="text-2xl font-extrabold">ABOUT ME</span>
       <span className="text-center mt-4">
-        Hi, I&apos;m Hassaan, a passionate front-end developer dedicated to crafting interactive and visually appealing web experiences. I specialize in React, Next.js, TypeScript, and Tailwind CSS, constantly pushing my limits to build efficient, scalable, and user-friendly applications.
+        Hi, I&apos;m <strong>M. Hassaan Qureshi</strong>, a passionate front-end developer and Computer Science graduate from Federal Urdu University of Science and Technology, Karachi. I&apos;m currently expanding my skills in full-stack development with a strong foundation in React.js, Next.js, JavaScript, TypeScript, HTML, and CSS.
         <br />
         <br />
-        Currently, I&apos;m expanding my skills in full-stack development while pursuing my Computer Science degree at Federal Urdu University Karachi. Additionally, I&apos;m enrolled in the Governor Sindh Initiative for AI, Web 3.0, and Metaverse, where I continuously explore cutting-edge technologies.
+        <strong>💼 Professional Experience:</strong><br />
+        I recently completed a Cloud App Development & Maintenance internship at <strong>Systems Limited</strong>, where I developed and maintained web applications. During this internship, I built a full-stack &quot;Rent-a-Ride&quot; platform using Next.js and MongoDB, implementing authentication, booking features, and database optimization while collaborating with the team to ensure smooth deployment.
         <br />
         <br />
-        Over time, I&apos;ve worked on several projects, including a resume generator, an eCommerce website, a fashion app landing page, and a Facebook clone. I&apos;ve also participated in a 7-day hackathon, where I built a fully functional website using Sanity.io as the CMS and delivered a business pitch deck.
+        <strong>📚 Additional Learning:</strong><br />
+        I&apos;m enrolled in the Governor Sindh Initiative for AI, Web 3.0, and Metaverse (GIAIC), continuously exploring cutting-edge technologies. I also have experience with Python and C programming languages.
         <br />
         <br />
-        Beyond development, I enjoy tackling new challenges, optimizing performance, and improving user experiences. I aim to contribute to innovative projects that bridge creativity with technology.
+        My goal is to become a Full Stack Developer, and I&apos;m actively seeking opportunities to grow and contribute to innovative projects that bridge creativity with technology.
         <br />
         <br />
-        🚀 Let&apos;s build something amazing together!
+        🎯 Let&apos;s build something amazing together!
       </span>
     </motion.div>
   );

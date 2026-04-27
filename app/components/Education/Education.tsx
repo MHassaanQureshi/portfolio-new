@@ -8,11 +8,18 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { useMediaQuery } from '@mui/material';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function Education() {
   const isMobile = useMediaQuery('(max-width:768px)');
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.9", "end 0.1"] });
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [50, 0, 0, -30]);
 
   return (
+    <motion.div ref={ref} style={{ opacity, y }}>
     <div className="w-full flex justify-center px-10 ml-20  md:px-16 lg:px-32 py-10 bg-transparent">
       <Timeline position={isMobile ? 'right' : 'alternate'} className="!p-0">
         {/* BSCS */}
@@ -31,7 +38,7 @@ export default function Education() {
           </TimelineContent>
         </TimelineItem>
 
-       
+
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
@@ -48,5 +55,6 @@ export default function Education() {
         </TimelineItem>
       </Timeline>
     </div>
+    </motion.div>
   );
 }

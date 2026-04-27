@@ -12,11 +12,11 @@ interface Props {
 
 export default function Project({ image, link }: Props) {
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+    const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.9", "end 0.1"] });
 
-    
-    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-    const translateY = useTransform(scrollYProgress, [0, 1], [100, 0]);
+
+    const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+    const translateY = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [100, 0, 0, -50]);
 
     return (
         <motion.div
