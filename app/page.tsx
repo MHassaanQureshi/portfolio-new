@@ -18,6 +18,7 @@ export default function Home(){
     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
       
       <Project image="/Images/comforty.png" link="https://sanity-comforty.vercel.app/"/>
+      <Project image="/Images/rent-a-ride.png" link="https://rent-a-ride-updated.vercel.app/"/>
       <Project image="/Images/exclusive.png" link="https://exclusive-shop-2-0.vercel.app/"/>
       <Project image="/Images/blog.png" link="https://blog-web-20.vercel.app/"/>
       <Project image="/Images/fashion.png" link="https://fashion-shop-sepia.vercel.app/"/>
