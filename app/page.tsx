@@ -35,6 +35,8 @@ export default function Home(){
       <Skill link="/images/react.png" />
       <Skill link="/images/python.png" />
       <Skill link="/images/html.png" />
+      <Skill link="/images/MongoDB.png" />
+      <Skill link="/images/Figma.png" />
       <Skill link="/images/css-1.png" />
       <Skill link="/images/java-script.png" />
       <Skill link="/images/typescript.png" />

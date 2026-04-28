@@ -5,19 +5,40 @@ export async function POST(req: Request) {
   try {
     const { name, message } = await req.json();
 
-    // Configure your email service
-    // You'll need to set these environment variables
+    // ✅ Validate input (important)
+    if (!name || !message) {
+      return NextResponse.json(
+        { message: "Missing fields" },
+        { status: 400 }
+      );
+    }
+
+    // ✅ Ensure env variables exist
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASSWORD) {
+      console.error("Missing email credentials in .env.local");
+      return NextResponse.json(
+        { message: "Server configuration error" },
+        { status: 500 }
+      );
+    }
+
+    // ✅ Better transporter config (more reliable than `service: gmail`)
     const transporter = nodemailer.createTransport({
-      service: "gmail", // or your email service
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
-        user: process.env.EMAIL_USER, // Your email
-        pass: process.env.EMAIL_PASSWORD, // Your email password or app password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
+    // ✅ Verify connection (helps debug)
+    await transporter.verify();
+
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to yourself
+      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_USER,
       subject: `Portfolio Contact from ${name}`,
       text: `Name: ${name}\n\nMessage: ${message}`,
       html: `
@@ -35,7 +56,7 @@ export async function POST(req: Request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("FULL ERROR:", error); // ✅ better debugging
     return NextResponse.json(
       { message: "Failed to send email" },
       { status: 500 }
