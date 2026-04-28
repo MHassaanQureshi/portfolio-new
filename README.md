@@ -1,6 +1,4 @@
-Certainly! Based on the repository's root `README.md` and file structure, here's a polished, professional, **formal** version of the README that describes the project and setup steps:
 
----
 
 # Portfolio
 
